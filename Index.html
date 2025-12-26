@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>LOBA Enterprise | Neural System</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="bg-[#020617] text-slate-300 antialiased overflow-x-hidden">
+
+    <header class="fixed top-0 w-full z-[120] glass-premium px-6 py-4 flex justify-between items-center border-b border-white/5">
+        <div class="flex items-center gap-4">
+            <button onclick="toggleMenu()" class="flex flex-col gap-1.5 focus:outline-none">
+                <div class="w-5 h-0.5 bg-white"></div>
+                <div class="w-3 h-0.5 bg-blue-500"></div>
+                <div class="w-5 h-0.5 bg-white"></div>
+            </button>
+            <div class="text-[10px] font-black tracking-[0.2em] text-white uppercase italic">
+                NICOLÁS <span class="text-blue-500 italic text-[11px] ml-1">♊</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-2">
+            <span class="text-[7px] font-bold text-emerald-500 uppercase tracking-tighter">Sistemas Activos</span>
+            <div class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_#10b981]"></div>
+        </div>
+    </header>
+
+    <nav id="side-menu" class="fixed inset-y-0 left-0 w-64 bg-[#020617]/98 backdrop-blur-3xl z-[130] -translate-x-full transition-transform duration-300 border-r border-white/10 shadow-2xl">
+        <div class="p-8 space-y-6 pt-24">
+            <div class="text-[9px] text-blue-500 font-mono tracking-widest uppercase mb-8 italic border-b border-blue-500/20 pb-2">Admin_Terminal_v4</div>
+            <a href="#" class="block text-xs font-black tracking-widest text-white uppercase italic hover:text-blue-400 transition-colors">Módulos Activos</a>
+            <a href="#" class="block text-xs font-bold tracking-widest text-slate-400 uppercase hover:text-white transition-colors">Consultoría</a>
+            <div class="pt-10 border-t border-white/5">
+                <button onclick="accesoAdmin()" class="text-[10px] text-slate-600 font-mono italic hover:text-slate-400">Acceso Búnker _</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-[85px]">
+        <section class="relative h-[35vh] w-full overflow-hidden bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000" 
+                 class="w-full h-full object-cover opacity-40 scale-110" alt="Neural Core">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-black/60"></div>
+            <div class="absolute bottom-8 left-6 animate-fade-in pr-6">
+                <p class="text-blue-400 font-mono text-[9px] uppercase tracking-widest mb-2 italic">Análisis de Red Completo</p>
+                <h1 class="text-3xl font-black text-white italic tracking-tighter leading-none">
+                    ¡HOLA! <br> <span class="text-blue-500 uppercase">¿Qué vamos a auditar hoy?</span>
+                </h1>
+            </div>
+        </section>
+
+        <section class="px-4 py-8">
+            <h2 class="text-slate-500 font-mono text-[9px] tracking-[0.5em] uppercase text-center mb-6 italic">Visual Showcase_Core</h2>
+            
+            <div class="grid grid-cols-2 gap-3 mb-8">
+                <div class="glass-premium rounded-2xl overflow-hidden group relative aspect-[4/5] border border-white/5">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-3 left-3">
+                        <p class="text-[8px] font-black text-white italic uppercase">Gaming Engine</p>
+                        <p class="text-[6px] text-blue-400 font-mono uppercase">Ejecución_VOD</p>
+                    </div>
+                </div>
+
+                <div class="glass-premium rounded-2xl overflow-hidden group relative aspect-[4/5] border border-white/5">
+                    <img src="https://images.unsplash.com/photo-1551288049-bbbda5366392?auto=format&fit=crop&q=80&w=500" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-3 left-3">
+                        <p class="text-[8px] font-black text-white italic uppercase">Gestión Pro</p>
+                        <p class="text-[6px] text-emerald-400 font-mono uppercase">Live_Audit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="glass-premium p-5 rounded-3xl border-l-4 border-l-blue-500 animate-fade-in hover:bg-white/5 transition-colors">
+                    <div class="flex justify-between items-center mb-1">
+                        <h4 class="text-white font-black italic text-sm uppercase">Gaming Engine</h4>
+                        <span class="text-[7px] font-mono text-blue-500 bg-blue-500/10 px-2 py-0.5 rounded-full uppercase">Optimized</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400">Optimización C++ para entornos móviles de alta carga y latencia cero.</p>
+                </div>
+                <div class="glass-premium p-5 rounded-3xl border-l-4 border-l-emerald-500 animate-fade-in hover:bg-white/5 transition-colors">
+                    <div class="flex justify-between items-center mb-1">
+                        <h4 class="text-white font-black italic text-sm uppercase">GESTIÓN PRO</h4>
+                        <span class="text-[7px] font-mono text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded-full uppercase">Verified</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400">Administración financiera privada y auditoría técnica de activos digitales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 pb-12">
+            <div class="glass-premium rounded-[2.5rem] overflow-hidden border border-blue-500/10">
+                <div id="chat-window" class="p-6 space-y-4">
+                    <div class="text-[10px] font-mono text-blue-300">
+                        <span class="text-blue-500 font-black tracking-widest italic">IA >></span> Para priorizar su atención en el búnker, complete el fichero técnico de auditoría:
+                    </div>
+                    
+                    <div id="fichero-tecnico" class="space-y-3 bg-black/40 p-5 rounded-3xl border border-white/5">
+                        <input type="text" id="lead-nombre" placeholder="NOMBRE COMPLETO" class="input-glass w-full text-[11px] font-bold">
+                        <input type="email" id="lead-correo" placeholder="CORREO CORPORATIVO" class="input-glass w-full text-[11px] font-bold">
+                        <input type="tel" id="lead-cel" placeholder="NÚMERO DE CELULAR" class="input-glass w-full text-[11px] font-bold">
+                        <select id="lead-software" class="input-glass w-full text-[11px] bg-[#0f172a] font-bold text-slate-500 appearance-none">
+                            <option value="" disabled selected>SELECCIONAR SOFTWARE...</option>
+                            <option value="Juegos">Gaming Engine</option>
+                            <option value="Gestion">Sistema de Gestión</option>
+                        </select>
+                        <button onclick="registrarPedido()" class="btn-primary w-full text-[10px] py-4 mt-2 font-black uppercase tracking-[0.2em] italic">
+                            Confirmar Entrada en Cola
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[9px] text-slate-600 text-center mt-6 px-10 leading-relaxed italic">
+                * Al confirmar, se generará un fichero neural para priorizar su atención técnica.
+            </p>
+        </section>
+    </main>
+
+    <div id="overlay" onclick="toggleMenu()" class="fixed inset-0 bg-black/80 z-[115] hidden backdrop-blur-sm"></div>
+    <script src="script.js/javscrip.js"></script>
+</body>
+</html>
